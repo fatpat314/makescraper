@@ -24,7 +24,7 @@ func scraper(w http.ResponseWriter, r *http.Request) {
 	// Instantiate default collector
 	c := colly.NewCollector()
 
-	selector := "body > div.container.d-flex.flex-wrap.body-wrapper.bg-white > main > div:nth-child(3) > div > div.syndicate > div:nth-child(1) > div > div > div > section > div > div > div:nth-child(1)"
+	selector := "body > div.container.d-flex.flex-wrap.body-wrapper.bg-white > main > div:nth-child(3) > div > div.syndicate > div:nth-child(1) > div > div > div > section > div > div > div:nth-child(1) > span.count"
 	// d := strings.Replace(structure, "body > div.container.d-flex.flex-wrap.body-wrapper.bg-white > main > div:nth-child(3) > div > div.syndicate > div:nth-child(1) > div > div > div > section > div > div > div:nth-child(1) > span.count", "body > div.container.d-flex.flex-wrap.body-wrapper.bg-white > main > div:nth-child(3) > div > div.syndicate > div:nth-child(1) > div > div > div > section > div > div > div:nth-child(2) > span.count", -1)
 
 	// On every a element which has href attribute call callback																																	 vChange this to change the amount
